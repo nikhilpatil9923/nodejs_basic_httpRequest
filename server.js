@@ -44,7 +44,7 @@ Data.push(chunk)
     const bodyString = Buffer.concat(Data).toString()
     const bodyjson =JSON.parse(bodyString) 
     const {
-        Employee,
+        Employee, 
         FileID
     } = bodyjson
     const fpath = path.join(__dirname,'Files', `test_file_${FileID}.txt`)
